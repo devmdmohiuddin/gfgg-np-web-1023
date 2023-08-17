@@ -75,6 +75,9 @@
 
 //  kit ui
 let defaultTransform = 0;
+let next = doument.getElementById('next');
+let prev = doument.getElementById('prev');
+
 function goNext() {
     defaultTransform = defaultTransform - 400;
     var slider = document.getElementById("slider");
