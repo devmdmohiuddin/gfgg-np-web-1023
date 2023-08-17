@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base layer */
+@layer base {
+    .cus-h1 {
+        @apply font-shippori sm:text-7xl font-bold  xl:text-8xl text-5xl
+    }
+
+    .cus-h2 {
+        @apply font-shippori xl:text-5xl sm:text-4xl text-3xl font-extrabold 
+    }
+
+    .cus-h3 {
+        @apply font-shippori xl:text-4xl sm:text-3xl text-2xl font-bold 
+    }
+
+    .cus-h4 {
+        @apply font-sue xl:text-4xl text-3xl font-medium -mb-2
+    }
+
+    .cus-h5 {
+        @apply font-shippori xl:text-3xl text-2xl font-bold 
+    }
+
+    .cus-h6 {
+        @apply font-playfair xl:text-3xl text-2xl font-semibold 
+    }
+}
+
+/* components layer */
+@layer components {
+    .cus-btn1 {
+        @apply bg-second uppercase rounded-full md:text-lg text-base font-work font-medium text-light1 shadow-lg transition hover:shadow-lg hover:scale-105
+    }
+
+    .cus-btn2 {
+        @apply bg-second uppercase rounded-md text-base font-work font-semibold text-light1 shadow-lg transition hover:shadow-lg hover:scale-105
+    }
+
+    .cus-bottom-bar {
+        @apply after:content-[''] after:w-16 after:h-[3px] after:block after:absolute after:-bottom-2 after:right-2/4 after:translate-x-2/4 after:rounded-full
+    } 
+
+    .cus-donate-now-bg {
+        background-image: url('../src/img/donate-now-banner1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .cus-donation-bg {
+        background-image: linear-gradient(to right, rgb(46, 64, 73, 0.9), rgb(46, 64, 73, 0.9)), url('../src/img/donation-banner-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .cus-better-world-bg {
+        background-image: linear-gradient(to right, rgba(232, 236, 240, 0.5), rgba(232, 236, 240, 0.5)), url('../src/img/better-world-bg-1.png');
+        background-color: #e8ecf0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:bottom center;
+    }
+}
+
+
+.media-scroller {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-auto-flow: column;
+    overflow-x: hidden;
+    /* overflow: scroll;
+     overscroll-behavior-inline: contain; */
+}
+
+.media-element img {
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 7px;
+    
+}
+/* 
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+} */
+
+.element-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; 
+}
+
+.element-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; 
+}
+
+.element-3 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3; 
+}
+
+.element-4 {
+    grid-column: 4 / 6;
+    grid-row: 1 / 2; 
+}
+
+.element-5 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3; 
+}
+
+.element-6 {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3; 
+}
+
+.element-7 {
+    grid-column: 6 / 8;
+    grid-row: 1 / 3; 
+}
+
+.element-8 {
+    grid-column: 8 / 9;
+    grid-row: 1 / 2; 
+}
+
+.element-9 {
+    grid-column: 9 / 10;
+    grid-row: 1 / 2; 
+}
+
+.element-10 {
+    grid-column: 8 / 10;
+    grid-row: 2 / 3; 
+}
+
+.element-11 {
+    grid-column: 10 / 11;
+    grid-row: 1 / 3; 
+}
+
+.element-12 {
+    grid-column: 11 / 13;
+    grid-row: 1 / 3; 
+}
+
+.element-13 {
+    grid-column: 13 / 14;
+    grid-row: 1 / 2; 
+}
+
+.element-14 {
+    grid-column: 13 / 14;
+    grid-row: 2 / 3; 
+}
+
