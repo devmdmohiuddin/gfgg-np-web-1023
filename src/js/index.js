@@ -75,8 +75,8 @@
 
 //  kit ui
 let defaultTransform = 0;
-let next = doument.getElementById('next');
-let prev = doument.getElementById('prev');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
 
 function goNext() {
     defaultTransform = defaultTransform - 400;
