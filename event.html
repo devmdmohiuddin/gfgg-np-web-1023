@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Shippori+Mincho:wght@400;500;600;700;800&family=Sue+Ellen+Francisco&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./dist/output.css" />
+    </head>
+    <body>
+        <!-- Header section -->
+        <header>
+            <!-- Header top for desktop -->
+            <div class="bg-first hidden lg:block">
+                <div class="container mx-auto grid grid-cols-5">
+                    <div class="col-span-4 flex items-center px-20 py-3">
+                        <a
+                            href="tel:+18325916011"
+                            class="text-light1 text-lg font-work pr-8"
+                            ><i class="fa-sharp fa-solid fa-phone mr-2"></i> +1
+                            (832) 591-6011</a
+                        >
+                        <a
+                            href="mailto:info@giveforgoodglobal.org"
+                            class="text-light1 text-lg font-work"
+                            ><i class="fa-sharp fa-solid fa-envelope mr-2"></i>
+                            info@giveforgoodglobal.org</a
+                        >
+                    </div>
+                    <div class="bg-firstLight space-x-3 py-3 text-center">
+                        <a href="#" class="text-xl text-light1">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-xl text-light1">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-xl text-light1">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-xl text-light1">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Header bottom for desktop -->
+            <div class="bg-light2 py-5 hidden lg:block px-5">
+                <div
+                    class="2xl:container 2xl:mx-auto grid grid-cols-5 items-center justify-between"
+                >
+                    <div>
+                        <a href="#">
+                            <img
+                                class="xs:w-56 sm:w-64"
+                                src="./src/img/gfgg-foundation-logo.png"
+                                alt="Give For Good Global Foundation Logo"
+                            />
+                        </a>
+                    </div>
+                    <nav class="col-span-3">
+                        <ul class="flex items-center justify-center">
+                            <li>
+                                <a
+                                    href="index.html"
+                                    class="font-work text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="about.html"
+                                    class="font-work text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="font-work text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
+                                    >Global Projects</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="font-work text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
+                                    >Donate</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="font-work text-lg xl:px-8 px-5 py-1 hover:text-first"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="text-center">
+                        <button class="cus-btn1 px-16 py-3">Donate</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header menu for mobile -->
+            <div
+                class="lg:hidden flex items-center justify-between px-5 py-4 z-50 bg-light2 sticky top-0"
+            >
+                <img
+                    class="w-40"
+                    src="./src/img/gfgg-foundation-logo.png"
+                    alt="GFGG Foundation Logo"
+                />
+                <button
+                    class="navbar-burger flex items-center text-lg text-dark1"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-menu relative z-50 hidden">
+                <div
+                    class="navbar-backdrop fixed inset-0 bg-dark1 opacity-25"
+                ></div>
+                <nav
+                    class="fixed top-0 left-0 bottom-0 flex flex-col w-9/12 h-full py-4 px-5 bg-light2 overflow-y-hidden"
+                >
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto" href="#">
+                            <img
+                                class="w-40"
+                                src="./src/img/gfgg-foundation-logo.png"
+                                alt="GFGG Foundation Logo"
+                            />
+                        </a>
+                        <button class="navbar-close">
+                            <span class="text-lg text-dark1"
+                                ><i class="fa-solid fa-xmark"></i
+                            ></span>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="">
+                                <a
+                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
+                                    href="index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="">
+                                <a
+                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
+                                    href="about.html"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li class="">
+                                <a
+                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
+                                    href="#"
+                                    >Global Projects</a
+                                >
+                            </li>
+                            <li class="">
+                                <a
+                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
+                                    href="#"
+                                    >Donate</a
+                                >
+                            </li>
+                            <li class="">
+                                <a
+                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
+                                    href="#"
+                                    >Contact</a
+                                >
+                            </li>
+                            <li>
+                                <button
+                                    class="cus-btn1 px-8 py-2 mt-4 ml-4 text-base"
+                                >
+                                    Donate
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="p-4 space-y-2">
+                            <a
+                                href="tel:+18325916011"
+                                class="text-dark1 text-base font-work block"
+                                ><i class="fa-sharp fa-solid fa-phone mr-2"></i>
+                                +1 (832) 591-6011</a
+                            >
+                            <a
+                                href="mailto:info@giveforgoodglobal.org"
+                                class="text-dark1 text-base font-work block"
+                                ><i
+                                    class="fa-sharp fa-solid fa-envelope mr-2"
+                                ></i>
+                                info@giveforgoodglobal.org</a
+                            >
+                        </div>
+                        <div
+                            class="flex items-center space-x-3 text-center p-4 pt-0"
+                        >
+                            <a
+                                href="#"
+                                class="w-8 h-8 flex items-center justify-center bg-dark5 text-light1 text-base rounded-full hover:bg-second hover:scale-95"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a
+                                href="#"
+                                class="w-8 h-8 flex items-center justify-center bg-dark5 text-light1 text-base rounded-full hover:bg-second hover:scale-95"
+                            >
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a
+                                href="#"
+                                class="w-8 h-8 flex items-center justify-center bg-dark5 text-light1 text-base rounded-full hover:bg-second hover:scale-95"
+                            >
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a
+                                href="#"
+                                class="w-8 h-8 flex items-center justify-center bg-dark5 text-light1 text-base rounded-full hover:bg-second hover:scale-95"
+                            >
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="lg:container lg:mx-auto px-3 lg:px-0">
+                <div class="py-12 sm:space-y-12 space-y-10">
+                    <div>
+                        <img
+                            class="w-full"
+                            src="./src/img/fundraising-bg.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="sm:space-y-12 space-y-8 lg:w-9/12 lg:mx-auto">
+                        <h3 class="cus-h3 text-center text-dark0">
+                            Harness the power of your community to help right
+                            <br class="hidden md:block" />the wrong of poverty
+                            by raising funds to support Us
+                        </h3>
+                        <p
+                            class="sm:text-lg text-base font-work text-dark8 text-center"
+                        >
+                            Give For Good Global Foundation connects nonprofits,
+                            donors, and companies in nearly every country in the
+                            world. We help fellow nonprofits access the funding,
+                            tools, training, and support they need to serve
+                            their communities.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-3 md:gap-16 gap-10 py-1">
+                    <div class="xl:px-12 text-center space-y-5">
+                        <img
+                            class="w-16 h-16 object-contain mx-auto"
+                            src="./src/img/fundraising-icon-1.png"
+                            alt=""
+                        />
+                        <p class="text-base font-work text-dark4 font-medium">
+                            Nonprofits around the world apply & join FGG to
+                            access more funding to build new skills and to make
+                            important connections
+                        </p>
+                    </div>
+                    <div class="xl:px-12 text-center space-y-5">
+                        <img
+                            class="w-16 h-16 object-contain mx-auto"
+                            src="./src/img/fundraising-icon-2.png"
+                            alt=""
+                        />
+                        <p class="text-base font-work text-dark4 font-medium">
+                            Nonprofits around the world apply & join FGG to
+                            access more funding to build new skills and to make
+                            important connections
+                        </p>
+                    </div>
+                    <div class="xl:px-12 text-center space-y-5">
+                        <img
+                            class="w-16 h-16 object-contain mx-auto"
+                            src="./src/img/fundraising-icon-3.png"
+                            alt=""
+                        />
+                        <p class="text-base font-work text-dark4 font-medium">
+                            Nonprofits around the world apply & join FGG to
+                            access more funding to build new skills and to make
+                            important connections
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Other fundraising -->
+            <div class="pt-20">
+                <div
+                    class="lg:container lg:mx-auto px-3 lg:px-0 sm:space-y-16 space-y-12"
+                >
+                    <div class="grid lg:grid-cols-2 gap-5">
+                        <div class="space-y-4 sm:text-left text-center">
+                            <h4 class="cus-h4 text-second">Fundraising</h4>
+                            <h3 class="cus-h3 text-dark1">
+                                Donate to a Fundraising Event <br />
+                                on Give For Good Global Foundation
+                            </h3>
+                        </div>
+                        <div
+                            class="flex items-center lg:justify-end sm:justify-start justify-center"
+                        >
+                            <button class="cus-btn1 px-16 py-3">
+                                See All Events
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10"
+                    >
+                        <div class="relative">
+                            <img
+                                class="w-full brightness-50"
+                                src="./src/img/fundraising-image-1.png"
+                                alt=""
+                            />
+                            <div class="absolute bottom-0 p-10 space-y-3">
+                                <h6
+                                    class="font-work font-semibold text-xl text-light1"
+                                >
+                                    Flying Kafue
+                                </h6>
+                                <p
+                                    class="text-base font-medium font-work text-light1"
+                                >
+                                    Flyingfish Kafue pike cow shark California
+                                    smo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                class="w-full brightness-50"
+                                src="./src/img/fundraising-image-1.png"
+                                alt=""
+                            />
+                            <div class="absolute bottom-0 p-10 space-y-3">
+                                <h6
+                                    class="font-work font-semibold text-xl text-light1"
+                                >
+                                    Flying Kafue
+                                </h6>
+                                <p
+                                    class="text-base font-medium font-work text-light1"
+                                >
+                                    Flyingfish Kafue pike cow shark California
+                                    smo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                class="w-full brightness-50"
+                                src="./src/img/fundraising-image-1.png"
+                                alt=""
+                            />
+                            <div class="absolute bottom-0 p-10 space-y-3">
+                                <h6
+                                    class="font-work font-semibold text-xl text-light1"
+                                >
+                                    Flying Kafue
+                                </h6>
+                                <p
+                                    class="text-base font-medium font-work text-light1"
+                                >
+                                    Flyingfish Kafue pike cow shark California
+                                    smo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                class="w-full brightness-50"
+                                src="./src/img/fundraising-image-1.png"
+                                alt=""
+                            />
+                            <div class="absolute bottom-0 p-10 space-y-3">
+                                <h6
+                                    class="font-work font-semibold text-xl text-light1"
+                                >
+                                    Flying Kafue
+                                </h6>
+                                <p
+                                    class="text-base font-medium font-work text-light1"
+                                >
+                                    Flyingfish Kafue pike cow shark California
+                                    smo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                class="w-full brightness-50"
+                                src="./src/img/fundraising-image-1.png"
+                                alt=""
+                            />
+                            <div class="absolute bottom-0 p-10 space-y-3">
+                                <h6
+                                    class="font-work font-semibold text-xl text-light1"
+                                >
+                                    Flying Kafue
+                                </h6>
+                                <p
+                                    class="text-base font-medium font-work text-light1"
+                                >
+                                    Flyingfish Kafue pike cow shark California
+                                    smo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                class="w-full brightness-50"
+                                src="./src/img/fundraising-image-1.png"
+                                alt=""
+                            />
+                            <div class="absolute bottom-0 p-10 space-y-3">
+                                <h6
+                                    class="font-work font-semibold text-xl text-light1"
+                                >
+                                    Flying Kafue
+                                </h6>
+                                <p
+                                    class="text-base font-medium font-work text-light1"
+                                >
+                                    Flyingfish Kafue pike cow shark California
+                                    smo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                class="w-full brightness-50"
+                                src="./src/img/fundraising-image-1.png"
+                                alt=""
+                            />
+                            <div class="absolute bottom-0 p-10 space-y-3">
+                                <h6
+                                    class="font-work font-semibold text-xl text-light1"
+                                >
+                                    Flying Kafue
+                                </h6>
+                                <p
+                                    class="text-base font-medium font-work text-light1"
+                                >
+                                    Flyingfish Kafue pike cow shark California
+                                    smo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                class="w-full brightness-50"
+                                src="./src/img/fundraising-image-1.png"
+                                alt=""
+                            />
+                            <div class="absolute bottom-0 p-10 space-y-3">
+                                <h6
+                                    class="font-work font-semibold text-xl text-light1"
+                                >
+                                    Flying Kafue
+                                </h6>
+                                <p
+                                    class="text-base font-medium font-work text-light1"
+                                >
+                                    Flyingfish Kafue pike cow shark California
+                                    smo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-8 border-b-1 border-dark0/50 pb-10">
+                        <h3 class="cus-h3 text-dark0 sm:text-left text-center">
+                            Fundraise For Give For Good Global Fundation
+                        </h3>
+                        <p
+                            class="sm:text-lg sm:text-left text-center text-base font-work text-dark9"
+                        >
+                            Let your friends and family know that you are
+                            fundraising for GFGG to help meet the urgent needs
+                            of people enduring poverty, disaster, violent
+                            conflict, and the acute impacts of climate change.
+                            Every dollar you raise can help send food, water,
+                            shelter, and lifesaving relief to communities facing
+                            the world's toughest challenges.
+                        </p>
+                        <p class="text-lg font-work text-dark9">
+                            It's easy to get started:
+                        </p>
+                        <ul
+                            class="list-disc space-y-3 font-work sm:text-xl text-base text-dark9 pl-8"
+                        >
+                            <li>
+                                Fill out the registration form below to create
+                                your campaign page.
+                            </li>
+                            <li>
+                                Customize your page by adding your story
+                                (optional).
+                            </li>
+                            <li>
+                                Then you're ready to spread the word and invite
+                                friends, colleagues, and family to donate.
+                            </li>
+                            <li>
+                                We will be here to help you along the way! (If
+                                you have any questions, please email
+                                <a
+                                    class="text-sixth"
+                                    href="mailto:info@giveforgoodglobal.org"
+                                    >info@giveforgoodglobal.org</a
+                                >
+                                for assistance).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- create your own -->
+            <div class="lg:container lg:mx-auto lg:px-0 px-3">
+                <div
+                    class="grid lg:grid-cols-2 gap-12 lg:pt-28 pt-20 lg:pb-28 pb-16"
+                >
+                    <!-- left side -->
+                    <div class="space-y-8 sm:text-left text-center">
+                        <div class="space-y-5">
+                            <h4 class="cus-h4 text-second">Create Your Own</h4>
+                            <h3 class="cus-h3 text-dark1">
+                                Get started on your fundraising page by
+                                registering
+                            </h3>
+                            <p
+                                class="font-work text-dark7 sm:text-lg text-base"
+                            >
+                                Lorem Ipsum is simply dummy text of the printin
+                                typesetting dummy text ever when an unknown
+                                printer took a galley of type and scrambled it
+                                to make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="space-y-8">
+                            <div
+                                class="sm:flex items-center sm:space-x-5 sm:space-y-0 space-y-3"
+                            >
+                                <div
+                                    class="sm:w-20 sm:h-20 sm:mx-0 mx-auto w-16 h-16 bg-light3 flex items-center justify-center"
+                                >
+                                    <span
+                                        class="sm:text-4xl text-3xl text-second"
+                                        ><i class="fa-regular fa-envelope"></i
+                                    ></span>
+                                </div>
+                                <div class="space-y-1">
+                                    <h6
+                                        class="text-xl font-shippori text-dark1 font-bold"
+                                    >
+                                        Message
+                                    </h6>
+                                    <p
+                                        class="sm:text-lg text-base font-work text-dark7"
+                                    >
+                                        support@walfare.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="sm:flex items-center sm:space-x-5 sm:space-y-0 space-y-3"
+                            >
+                                <div
+                                    class="sm:w-20 sm:h-20 sm:mx-0 mx-auto w-16 h-16 bg-light3 flex items-center justify-center"
+                                >
+                                    <span
+                                        class="sm:text-4xl text-3xl text-second"
+                                        ><i class="fa-solid fa-phone"></i
+                                    ></span>
+                                </div>
+                                <div class="space-y-1">
+                                    <h6
+                                        class="text-xl font-shippori text-dark1 font-bold"
+                                    >
+                                        Contact Us
+                                    </h6>
+                                    <p
+                                        class="sm:text-lg text-base font-work text-dark7"
+                                    >
+                                        +01 (000) 265 458
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-5">
+                            <div class="space-y-2">
+                                <h5 class="cus-h5 text-dark1">
+                                    Share on social media
+                                </h5>
+                                <p
+                                    class="font-work text-dark7 sm:text-lg text-base"
+                                >
+                                    Lorem Ipsum is simply dummy text of the
+                                    printin typesetting dummy .
+                                </p>
+                            </div>
+                            <div class="felx items-center space-x-4">
+                                <span class="text-dark1 text-3xl">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <span class="text-dark1 text-3xl">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                                <span class="text-dark1 text-3xl">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </span>
+                                <span class="text-dark1 text-3xl">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right side -->
+                    <div class="sm:p-12 p-6 border-1 border-light4">
+                        <form class="space-y-5">
+                            <div>
+                                <input
+                                    class="w-full focus:outline-none focus:border-0 text-base text-dark1 font-work bg-light4 p-5 placeholder:font-work placeholder:text-lg placeholder:text-dark7 sm:placeholder:text-base"
+                                    type="text"
+                                    placeholder="Name of fundraiser*"
+                                />
+                            </div>
+                            <div>
+                                <input
+                                    class="w-full focus:outline-none focus:border-0 text-bae text-dark1 font-work bg-light4 p-5 placeholder:font-work placeholder:text-lg placeholder:text-dark7"
+                                    type="text"
+                                    placeholder="Page Link*"
+                                />
+                            </div>
+                            <div class="space-y-3">
+                                <input
+                                    class="w-full focus:outline-none focus:border-0 text-bae text-dark1 font-work bg-light4 p-5 placeholder:font-work placeholder:text-lg placeholder:text-dark7"
+                                    type="text"
+                                    onfocus="(this.type='date')"
+                                    placeholder="Campaign Date"
+                                />
+                                <p class="font-work text-dark7 text-base">
+                                    show a date for your campaign on your
+                                    fudraising page
+                                </p>
+                            </div>
+                            <div>
+                                <input
+                                    class="w-full focus:outline-none focus:border-0 text-bae text-dark1 font-work bg-light4 p-5 placeholder:font-work placeholder:text-lg placeholder:text-dark7"
+                                    type="text"
+                                    placeholder="Set Goal*"
+                                />
+                            </div>
+                            <div>
+                                <select
+                                    name=""
+                                    id=""
+                                    class="w-full focus:outline-none focus:border-0 text-bae text-dark1 font-work bg-light4 p-5 placeholder:font-work placeholder:text-lg placeholder:text-dark7"
+                                >
+                                    <option value="1">One</option>
+                                    <option value="1">One</option>
+                                    <option value="1">One</option>
+                                </select>
+                            </div>
+                            <div class="space-y-4">
+                                <p
+                                    class="text-dark1 font-work text-lg font-medium"
+                                >
+                                    Make a Donation*
+                                </p>
+                                <div>
+                                    <label for="">
+                                        <input
+                                            type="radio"
+                                            name="donation"
+                                            id=""
+                                            checked
+                                        />
+                                        <span
+                                            class="text-dark1 font-work text-base font-medium"
+                                            >Yes! I'd like to make a donation
+                                            toward my fudraising goal.</span
+                                        >
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="">
+                                        <input
+                                            type="radio"
+                                            name="donation"
+                                            id=""
+                                        />
+                                        <span
+                                            class="text-dark1 font-work text-base"
+                                            >No thanks.</span
+                                        >
+                                    </label>
+                                </div>
+                                <button
+                                    class="cus-btn1 text-light1 bg-dark1 px-16 py-3"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- become a volunteer -->
+            <div class="cus-volunteer-bg lg:py-24 py-20">
+                <div
+                    class="lg:container lg:mx-auto lg:px-0 px-3 space-y-5 text-center"
+                >
+                    <h4 class="cus-h4 text-dark1">Join Us</h4>
+                    <h3 class="cus-h3 text-dark1">
+                        Become A Volunteer,<br />
+                        Change A Life
+                    </h3>
+                    <button class="cus-btn1 px-20 py-3 bg-dark1">Join Us</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Footer section -->
+        <footer class="bg-dark1">
+            <!-- Footer top -->
+            <div class="py-12 lg:py-20">
+                <div
+                    class="lg:container lg:mx-auto grid gap-8 sm:gap-10 lg:grid-cols-5 sm:grid-cols-3 grid-cols-1 lg:px-0 px-3"
+                >
+                    <!-- grid grid-cols-5 gap-x-10 -->
+                    <div class="sm:col-span-2 space-y-5">
+                        <a href="#">
+                            <img
+                                class="w-56 sm:w-64"
+                                src="./src/img/gfgg-foundatin-logo-footer.png"
+                                alt="Give For Goob Global Foundation Logo"
+                            />
+                        </a>
+                        <p class="text-light1 font-work lg:text-lg text-base">
+                            ‘Give For Good Global Foundation’ works worldwide to
+                            fight against hunger and poverty, while giving aid
+                            to child education, medical treatment, elderlies &
+                            shelter support. Our journey is tough, because it’s
+                            for a better life, for humankind around the world.
+                        </p>
+                        <button class="cus-btn1 py-3 px-16">Donate Now</button>
+                    </div>
+                    <div class="space-y-5">
+                        <h6 class="cus-h6 text-light1">Quick Link</h6>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >Donate</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >Contact Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-5">
+                        <h6 class="cus-h6 text-light1">Global Projects</h6>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >End Hunger</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >Child Education</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >Help Elderly</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >Safe Place To Stay</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >Medical Treatment</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >People Empowerment</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    href="#"
+                                    >People Development</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-5">
+                        <h6 class="cus-h6 text-light1">Contact</h6>
+                        <p class="text-light1 lg:text-lg text-base font-work">
+                            16635 String Cypress <br />Road, #2317, Cypress, TX
+                            77429
+                        </p>
+                        <p class="text-light1 lg:text-lg text-base font-work">
+                            <a
+                                class="break-words"
+                                href="mailto:info@giveforgoodglobal.org"
+                                >info@giveforgoodglobal.org</a
+                            >
+                        </p>
+                        <p class="text-light1 lg:text-lg text-base font-work">
+                            <a
+                                href="tel:+18325916011"
+                                class="border-b-1 border-light1"
+                                >+1 (832) 591-6011</a
+                            >
+                        </p>
+                        <div class="flex space-x-3">
+                            <a
+                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 lg:text-lg text-base rounded-full hover:bg-second hover:scale-95"
+                                href="#"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a
+                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 lg:text-lg text-base rounded-full hover:bg-second hover:scale-95"
+                                href="#"
+                            >
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a
+                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 lg:text-lg text-base rounded-full hover:bg-second hover:scale-95"
+                                href="#"
+                            >
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a
+                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 lg:text-lg text-base rounded-full hover:bg-second hover:scale-95"
+                                href="#"
+                            >
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer bottom -->
+            <div class="border-t-1 border-t-light2 py-5">
+                <div class="xs:none px-4 md:container md:mx-auto space-y-2">
+                    <p class="text-center text-light1 text-base font-work">
+                        Give For Good Global Foundation, Inc is an US 501(c)(3)
+                        nonprofit organization, EIN 87-1627674. Donations are
+                        tax-deductible.
+                    </p>
+                    <p class="text-center text-light1 text-base font-work">
+                        Copyright © 2022 Give For Good Global Foundation, Inc.
+                        All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Tailwind elements slider -->
+        <script
+            type="text/javascript"
+            src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+        ></script>
+
+        <script type="module" src="./src/js/index.js"></script>
+    </body>
+</html>

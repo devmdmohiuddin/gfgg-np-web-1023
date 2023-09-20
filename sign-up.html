@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign up</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Bebas+Neue&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Sue+Ellen+Francisco&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./dist/output.css" />
+    </head>
+    <body>
+        <section class="cus-sign-up-bg">
+            <div class="lg:container lg:mx-auto lg:px-0 px-3">
+                <div class="grid md:grid-cols-2 grid-cols-1 lg:gap-20 gap-10 2xl:px-64 32">
+                    <div class="md:flex items-center justify-center md:h-screen">
+                        <div class="md:space-y-8 md:pt-0 space-y-5 pt-10">
+                            <img
+                                class="md:w-80 md:mx-0 w-60 mx-auto"
+                                src="./src/img/gfgg-foundatin-logo-footer.png"
+                                alt=""
+                            />
+                            <h3 class="cus-h3 text-light1 md:text-left text-center">
+                                Building A <br />
+                                Better Tomorrow
+                            </h3>
+                            <p
+                                class="font-inter text-light1 text-base font-light md:text-left text-center"
+                            >
+                                By signing up with GFGG Non Profit, you're
+                                taking the first step towards becoming a
+                                catalyst for change. Together, we can create a
+                                world where kindness, sustainability, and
+                                collaboration reign supreme.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-light8 sm:p-10 p-5 md:mt-24 rounded-lg space-y-6">
+                        <div class="space-y-3">
+                            <p
+                                class="text-dark0 font-light text-sm uppercase font-inter"
+                            >
+                                Let's Get You Started
+                            </p>
+                            <h6 class="cus-h6 text-dark0">Create an Account</h6>
+                        </div>
+                        <form class="space-y-5">
+                            <div class="space-y-1">
+                                <label
+                                    class="text-dark10 text-base font-inter block"
+                                    for=""
+                                    >Your Name</label
+                                >
+                                <input
+                                    class="w-full border-1 text-dark10 border-light14 hover:border-dark12 focus:outline-dark12 placeholder:text-sm rounded-md p-3 placeholder:font-inter"
+                                    placeholder="Johnson Doe"
+                                    type="email"
+                                />
+                            </div>
+                            <div class="space-y-1">
+                                <label
+                                    class="text-dark10 text-base font-inter block"
+                                    for=""
+                                    >Email</label
+                                >
+                                <input
+                                    class="w-full border-1 text-dark10 border-light14 hover:border-dark12 focus:outline-dark12 placeholder:text-sm rounded-md p-3 placeholder:font-inter"
+                                    placeholder="johnsondoe@gmail.com"
+                                    type="email"
+                                />
+                            </div>
+                            <div class="space-y-1">
+                                <label
+                                    class="text-dark10 text-base font-inter block"
+                                    for=""
+                                    >Password</label
+                                >
+                                <input
+                                    class="w-full border-1 text-dark10 border-light14 hover:border-dark12 focus:outline-dark12 placeholder:text-sm rounded-md p-3 placeholder:font-inter"
+                                    placeholder="*******"
+                                    type="password"
+                                />
+                            </div>
+                            <div>
+                                <button
+                                    class="w-full bg-dark0 text-light1 uppercase text-sm p-4 rounded-md"
+                                >
+                                    Get Started
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="w-5/12 h-[1px] bg-light19"></div>
+                                <p
+                                    class="text-dark0 font-inter text-sm font-medium"
+                                >
+                                    Or
+                                </p>
+                                <div class="w-5/12 h-[1px] bg-light19"></div>
+                            </div>
+                            <div>
+                                <button
+                                    class="flex items-center w-full sm:space-x-16 space-x-5 py-3 sm:px-10 px-5 border-1 border-light20 rounded-md"
+                                >
+                                    <img class="w-5 h-5 object-contain"
+                                        src="./src/img/google-icon.png"
+                                        alt=""
+                                    />
+                                    <span class="text-dark9 font-inter text-sm"
+                                        >Sign up with Google</span
+                                    >
+                                </button>
+                            </div>
+                            <div>
+                                <button class="flex items-center w-full sm:space-x-16 space-x-5 py-3 sm:px-10 px-5 border-1 border-light20 rounded-md">
+                                    <img class="w-5 h-5 object-contain"
+                                        src="./src/img/facebook-icon.png"
+                                        alt=""
+                                    />
+                                    <span class="text-dark9 font-inter text-sm">Sign up with Facebook</span>
+                                </button>
+                            </div>
+                        </form>
+                        <p class="text-center">
+                            <span class="text-dark10 font-inter text-sm">Already have an account? </span>
+                            <a class="font-inter text-dark0 text-sm uppercase underline font-semibold" href="login.html">Login Here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tailwind elements slider -->
+        <script
+            type="text/javascript"
+            src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+        ></script>
+
+        <script src="./src/js/index.js"></script>
+    </body>
+</html>
