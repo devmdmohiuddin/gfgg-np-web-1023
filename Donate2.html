@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
+        <title>Donate 2</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Shippori+Mincho:wght@400;500;600;700;800&family=Sue+Ellen+Francisco&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Bebas+Neue&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Sue+Ellen+Francisco&display=swap"
             rel="stylesheet"
         />
 
@@ -28,44 +28,67 @@
         <header>
             <!-- Header top for desktop -->
             <div class="bg-first hidden lg:block">
-                <div class="container mx-auto grid grid-cols-5">
-                    <div class="col-span-4 flex items-center px-20 py-3">
-                        <a
-                            href="tel:+18325916011"
-                            class="text-light1 text-lg font-work pr-8"
-                            ><i class="fa-sharp fa-solid fa-phone mr-2"></i> +1
-                            (832) 591-6011</a
-                        >
-                        <a
-                            href="mailto:info@giveforgoodglobal.org"
-                            class="text-light1 text-lg font-work"
-                            ><i class="fa-sharp fa-solid fa-envelope mr-2"></i>
-                            info@giveforgoodglobal.org</a
-                        >
+                <div class="lg:container lg:mx-auto">
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="flex items-center py-3 space-x-8">
+                            <a
+                                href="tel:+18325916011"
+                                class="text-light1 text-base font-inter"
+                                ><i class="fa-sharp fa-solid fa-phone mr-2"></i>
+                                +1 (832) 591-6011</a
+                            >
+                            <a
+                                href="mailto:info@giveforgoodglobal.org"
+                                class="text-light1 text-base font-inter"
+                                ><i
+                                    class="fa-sharp fa-solid fa-envelope mr-2"
+                                ></i>
+                                info@giveforgoodglobal.org</a
+                            >
+                        </div>
+                        <div class="flex justify-end items-center space-x-16">
+                            <div class="space-x-3">
+                                <a
+                                    href="login"
+                                    class="font-inter text-light1 text-base"
+                                    >Login</a
+                                >
+                                <span class="text-light1 font-inter">|</span>
+                                <a
+                                    href="#"
+                                    class="font-inter text-light1 text-base"
+                                    >Sign Up</a
+                                >
+                            </div>
+                            <div
+                                class="bg-firstLight space-x-3 py-3 text-center px-8"
+                            >
+                                <a href="#" class="text-xl text-light1">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-xl text-light1">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" class="text-xl text-light1">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-xl text-light1">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-firstLight space-x-3 py-3 text-center">
-                        <a href="#" class="text-xl text-light1">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-xl text-light1">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="#" class="text-xl text-light1">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-xl text-light1">
-                            <i class="fa-brands fa-pinterest"></i>
-                        </a>
-                    </div>
+
+                    <!--     -->
                 </div>
             </div>
             <!-- Header bottom for desktop -->
-            <div class="bg-light2 py-5 hidden lg:block px-5">
+            <div class="bg-light2 py-5 hidden lg:block px-5 sticky">
                 <div
                     class="2xl:container 2xl:mx-auto grid grid-cols-5 items-center justify-between"
                 >
                     <div>
-                        <a href="#">
+                        <a href="index.html">
                             <img
                                 class="xs:w-56 sm:w-64"
                                 src="./src/img/gfgg-foundation-logo.png"
@@ -78,35 +101,81 @@
                             <li>
                                 <a
                                     href="index.html"
-                                    class="font-work text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
+                                    class="font-inter text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
                                     >Home</a
                                 >
                             </li>
-                            <li>
+                            <li class="relative group">
                                 <a
-                                    href="about.html"
-                                    class="font-work text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
-                                    >About Us</a
+                                    href="#"
+                                    class="font-inter text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
+                                    >About <i class="fa-solid fa-angle-down"></i
+                                ></a>
+                                <ul
+                                    class="absolute w-64 h-auto top-8 left-0 z-50 shadow bg-light1 p-5 rounded-sm space-y-3 hidden group-hover:block"
                                 >
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="about.html"
+                                            >About Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="partner-and-testimonial.html"
+                                            >Partners & Testimonials</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="privacy-policy.html"
+                                            >Privacy Policy</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="become-a-volunteer.html"
+                                            >Become A Volunteer</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="career-opportunities.html"
+                                            >Career & Benefits</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="documents.html"
+                                            >Documents</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a
-                                    href="#"
-                                    class="font-work text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
+                                    href="global-projects.html"
+                                    class="font-inter text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
                                     >Global Projects</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="#"
-                                    class="font-work text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
+                                    href="donate.html"
+                                    class="font-inter text-lg border-r-1 border-r-light8 xl:px-8 px-5 py-1 hover:text-first"
                                     >Donate</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="#"
-                                    class="font-work text-lg xl:px-8 px-5 py-1 hover:text-first"
+                                    href="contact.html"
+                                    class="font-inter text-lg xl:px-8 px-5 py-1 hover:text-first"
                                     >Contact</a
                                 >
                             </li>
@@ -120,7 +189,7 @@
 
             <!-- Header menu for mobile -->
             <div
-                class="lg:hidden flex items-center justify-between px-5 py-4 z-50 bg-light2 sticky top-0"
+                class="lg:hidden flex items-center justify-between px-5 py-4 z-50 bg-light2"
             >
                 <img
                     class="w-40"
@@ -138,10 +207,10 @@
                     class="navbar-backdrop fixed inset-0 bg-dark1 opacity-25"
                 ></div>
                 <nav
-                    class="fixed top-0 left-0 bottom-0 flex flex-col w-9/12 h-full py-4 px-5 bg-light2 overflow-y-hidden"
+                    class="fixed top-0 left-0 bottom-0 flex flex-col sm:w-9/12 w-full h-full py-4 px-5 bg-light2 overflow-y-hidden"
                 >
                     <div class="flex items-center mb-8">
-                        <a class="mr-auto" href="#">
+                        <a class="mr-auto" href="index.html">
                             <img
                                 class="w-40"
                                 src="./src/img/gfgg-foundation-logo.png"
@@ -156,47 +225,108 @@
                     </div>
                     <div>
                         <ul>
+                            <li
+                                class=" flex items-center"
+                            >
+                                <a
+                                    class="block p-4 text-base font-medium font-inter text-dark1 transition hover:text-first"
+                                    href="sign-up.html"
+                                    >Sign In</a
+                                >
+                                <a
+                                    class="block p-4 text-base font-medium font-inter text-dark1 transition hover:text-first"
+                                    href="login.html"
+                                    >Login</a
+                                >
+                            </li>
+                            <li class="pb-5 border-b-1 border-light9">
+                                <a href="donate.html"
+                                    class="cus-btn1 px-8 py-2 text-base"
+                                >
+                                    Donate
+                                </a>
+                            </li>
                             <li class="">
                                 <a
-                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
+                                    class="block p-4 text-base font-medium font-inter text-dark1 transition hover:text-first"
                                     href="index.html"
                                     >Home</a
                                 >
                             </li>
-                            <li class="">
+                            <li class="relative group">
                                 <a
-                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
-                                    href="about.html"
-                                    >About Us</a
+                                    class="block p-4 text-base font-medium font-inter text-dark1 transition hover:text-first"
+                                    href="#"
+                                    >About
+                                    <i class="fa-solid fa-angle-down"></i
+                                ></a>
+                                <ul
+                                    class="absolute w-64 h-auto top-12 left-0 z-50 shadow bg-light1 p-5 rounded-sm space-y-3 hidden group-hover:block"
                                 >
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="about.html"
+                                            >About Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="partner-and-testimonial.html"
+                                            >Partners & Testimonials</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="privacy-policy.html"
+                                            >Privacy Policy</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="become-a-volunteer.html"
+                                            >Become A Volunteer</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="career-opportunities.html"
+                                            >Career & Benefits</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="font-inter text-base hover:text-first"
+                                            href="documents.html"
+                                            >Documents</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
                             <li class="">
                                 <a
-                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
-                                    href="#"
+                                    class="block p-4 text-base font-medium font-inter text-dark1 transition hover:text-first"
+                                    href="global-projects.html"
                                     >Global Projects</a
                                 >
                             </li>
                             <li class="">
                                 <a
-                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
-                                    href="#"
+                                    class="block p-4 text-base font-medium font-inter text-dark1 transition hover:text-first"
+                                    href="donate.html"
                                     >Donate</a
                                 >
                             </li>
                             <li class="">
                                 <a
-                                    class="block p-4 text-base font-medium font-work text-dark1 transition hover:text-first"
-                                    href="#"
+                                    class="block p-4 text-base font-medium font-inter text-dark1 transition hover:text-first"
+                                    href="contact.html"
                                     >Contact</a
                                 >
-                            </li>
-                            <li>
-                                <button
-                                    class="cus-btn1 px-8 py-2 mt-4 ml-4 text-base"
-                                >
-                                    Donate
-                                </button>
                             </li>
                         </ul>
                     </div>
@@ -204,13 +334,13 @@
                         <div class="p-4 space-y-2">
                             <a
                                 href="tel:+18325916011"
-                                class="text-dark1 text-base font-work block"
+                                class="text-dark1 text-base font-inter block"
                                 ><i class="fa-sharp fa-solid fa-phone mr-2"></i>
                                 +1 (832) 591-6011</a
                             >
                             <a
                                 href="mailto:info@giveforgoodglobal.org"
-                                class="text-dark1 text-base font-work block"
+                                class="text-dark1 text-base font-inter block"
                                 ><i
                                     class="fa-sharp fa-solid fa-envelope mr-2"
                                 ></i>
@@ -250,7 +380,7 @@
             </div>
         </header>
 
-        <!-- Donate 1  hero section -->
+        <!-- Donate 2  hero section -->
         <section class="cus-donate-bg">
             <div class="lg:container lg:mx-auto py-44 text-center px-3">
                 <h1 class="cus-h1 text-light1">Donate Today</h1>
@@ -258,7 +388,7 @@
         </section>
 
         <!-- Small descripton for donation section -->
-        <section class="lg:pt-20 pt-12">
+        <section class="lg:pt-28 pt-14">
             <div
                 class="lg:container lg:mx-auto lg:px-0 px-3 text-center sm:space-y-8 space-y-5"
             >
@@ -266,114 +396,22 @@
                     Humanitarian Support to Elderly <br />
                     People in Ukraine
                 </h3>
-                <p class="font-work sm:text-lg text-base text-dark3">
+                <p class="font-inter text-dark3">
                     Right now, 43 million people are on the brink of famine. At
                     least 1 million children in Afghanistan will suffer from
-                    severe acute malnutrition. In Yemen, 360,000 malnourished
-                    children could die without food aid. Here’s how your gift
-                    today can help
+                    severe acute malnutrition.
+                    <br class="md:inline-block hidden" />
+                    In Yemen, 360,000 malnourished children could die without
+                    food aid. Here’s how your gift today can help
                 </p>
             </div>
         </section>
 
-        <!-- What we do section -->
-        <section class="lg:pt-24 pt-12">
-            <div
-                class="lg:container lg:mx-auto text-center space-y-12 lg:px-0 px-3"
-            >
-                <div class="space-y-3">
-                    <h4 class="cus-h4 text-second">What we do</h4>
-                    <h3 class="cus-h3 text-dark1">
-                        We do it for People in Need
-                    </h3>
-                </div>
-                <div class="grid lg:grid-cols-3 xl:gap-16 gap-5 sm:grid-cols-2">
-                    <div class="space-y-3 p-5 hover:shadow-lg">
-                        <img
-                            class="w-16 h-16 block mx-auto"
-                            src="./src/img/medical-treatment.png"
-                            alt="Medical Treatment Program"
-                        />
-                        <h5 class="cus-h5 text-dark1">Medical Treatment</h5>
-                        <p class="font-work sm:text-lg text-base text-dark1">
-                            Give for Good Global promises to help in medical
-                            support to developing countries.
-                        </p>
-                    </div>
-                    <div class="space-y-3 p-5 hover:shadow-lg">
-                        <img
-                            class="w-16 h-16 block mx-auto"
-                            src="./src/img/end-hunger.png"
-                            alt="End Hunger Program"
-                        />
-                        <h5 class="cus-h5 text-dark1">End Hunger</h5>
-                        <p class="font-work sm:text-lg text-base text-dark1">
-                            Give for Good Global has a global purpose to fight
-                            hunger, and help save children’s lives & their human
-                            rights to thrive. Let’s take back humanity.
-                        </p>
-                    </div>
-                    <div class="space-y-3 p-5 hover:shadow-lg">
-                        <img
-                            class="w-16 h-16 block mx-auto"
-                            src="./src/img/child-education.png"
-                            alt="Child Education Program"
-                        />
-                        <h5 class="cus-h5 text-dark1">Child Education</h5>
-                        <p class="font-work sm:text-lg text-base text-dark1">
-                            Give for Good Global gives supreme effort to aid in
-                            child education to help unprivileged children get
-                            educated and bloom with potential.
-                        </p>
-                    </div>
-                    <div class="space-y-3 p-5 hover:shadow-lg">
-                        <img
-                            class="w-16 h-16 block mx-auto"
-                            src="./src/img/help-elderly.png"
-                            alt="Help Elderly Program"
-                        />
-                        <h5 class="cus-h5 text-dark1">Help Elderly</h5>
-                        <p class="font-work sm:text-lg text-base text-dark1">
-                            Give for Good Global works for the elderlies to
-                            better their life with mobility equipment, house
-                            necessities etc.
-                        </p>
-                    </div>
-                    <div class="space-y-3 p-5 hover:shadow-lg">
-                        <img
-                            class="w-16 h-16 block mx-auto"
-                            src="./src/img/safe-place-to-stay.png"
-                            alt="Safe Place To Stay Program"
-                        />
-                        <h5 class="cus-h5 text-dark1">Safe Place To Stay</h5>
-                        <p class="font-work sm:text-lg text-base text-dark1">
-                            Give for Good Global helps build safe places for
-                            homeless and disaster-affected citizens around the
-                            world.
-                        </p>
-                    </div>
-                    <div class="space-y-3 p-5 hover:shadow-lg">
-                        <img
-                            class="w-16 h-16 block mx-auto"
-                            src="./src/img/people-development.png"
-                            alt="People Development Program"
-                        />
-                        <h5 class="cus-h5 text-dark1">People Development</h5>
-                        <p class="font-work sm:text-lg text-base text-dark1">
-                            As part of this program GFGG provides psychological
-                            support, skills development and sporting opportunity
-                            to youth and adult to reduce the inequality gap.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Donate form and cart section -->
-        <section class="lg:py-24 py-12">
+        <section class="lg:py-28 py-14">
             <div class="lg:container lg:mx-auto lg:px-0 px-3">
                 <div class="sm:space-y-16 space-y-10">
-                    <h3 class="cus-h3 text-center text-dark0">
+                    <h3 class="cus-h3 text-center text-dark1">
                         Harness the power of your community to help right
                         <br class="hidden md:block" />
                         the wrong of poverty by raising funds to support Us
@@ -382,21 +420,19 @@
                         <!-- cards -->
                         <div class="space-y-8">
                             <ul
-                                class="bg-light16 border-1 border-second/10 sm:px-10 px-5"
+                                class="bg-light16 border-1 border-second/10 md:px-10 px-5"
                             >
                                 <li
-                                    class="relative space-y-8 sm:py-16 py-12 border-b-1 border-light15"
+                                    class="relative space-y-8 md:py-16 py-12 border-b-1 border-light15"
                                 >
                                     <div class="space-y-3">
-                                        <h5
-                                            class="text-2xl font-shippori font-semibold"
-                                        >
+                                        <h5 class="cus-h5 text-dark1">
                                             Home & Education ofr Abused Children
                                             In colombia
                                         </h5>
 
                                         <p
-                                            class="text-second text-sm font-work space-x-5"
+                                            class="text-second text-sm font-inter space-x-5"
                                         >
                                             <span>Safe Place To Stay</span>
                                             <span>||</span>
@@ -408,19 +444,19 @@
                                         <div
                                             class="xs:flex items-center space-x-8"
                                         >
-                                            <div class="relative sm:w-4/12">
+                                            <div class="relative md:w-4/12">
                                                 <input
-                                                    class="w-full bg-light4 pl-16 py-2 text-dark3 text-xl font-bold focus:outline-none focus:border-0"
+                                                    class="w-full bg-light4 pl-16 py-2 text-dark3 text-xl font-bold rounded-sm focus:outline-none focus:border-1 border-1 border-dark10/50 hover:border-dark10 focus:border-dark10"
                                                     type="text"
                                                     value="50"
                                                 />
                                                 <span
-                                                    class="absolute top-2/4 -translate-y-2/4 left-5 text-dark3 text-lg"
+                                                    class="absolute top-2/4 -translate-y-2/4 left-5 text-dark3 text-lg text-inter font-semibold"
                                                     >$</span
                                                 >
                                             </div>
                                             <div
-                                                class="w-2/4 sm:flex text-sm text-dark3 font-work sm:space-x-8 sm:space-y-0 space-y-2 xs:mt-0 mt-5"
+                                                class="w-2/4 sm:flex text-sm text-dark3 font-inter sm:space-x-8 sm:space-y-0 space-y-2 xs:mt-0 mt-5"
                                             >
                                                 <label
                                                     class="flex items-center space-x-2"
@@ -444,18 +480,16 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="relative space-y-8 sm:py-16 py-12 border-b-1 border-light15"
+                                    class="relative space-y-8 md:py-16 py-12 border-b-1 border-light15"
                                 >
                                     <div class="space-y-3">
-                                        <h5
-                                            class="text-2xl font-shippori font-semibold"
-                                        >
+                                        <h5 class="cus-h5 text-dark1">
                                             Home & Education ofr Abused Children
                                             In colombia
                                         </h5>
 
                                         <p
-                                            class="text-second text-sm font-work space-x-5"
+                                            class="text-second text-sm font-inter space-x-5"
                                         >
                                             <span>Safe Place To Stay</span>
                                             <span>||</span>
@@ -467,19 +501,19 @@
                                         <div
                                             class="xs:flex items-center space-x-8"
                                         >
-                                            <div class="relative sm:w-4/12">
+                                            <div class="relative md:w-4/12">
                                                 <input
-                                                    class="w-full bg-light4 pl-16 py-2 text-dark3 text-xl font-bold focus:outline-none focus:border-0"
+                                                    class="w-full bg-light4 pl-16 py-2 text-dark3 text-xl font-bold rounded-sm focus:outline-none focus:border-1 border-1 border-dark10/50 hover:border-dark10 focus:border-dark10"
                                                     type="text"
                                                     value="50"
                                                 />
                                                 <span
-                                                    class="absolute top-2/4 -translate-y-2/4 left-5 text-dark3 text-lg"
+                                                    class="absolute top-2/4 -translate-y-2/4 left-5 text-dark3 text-lg text-inter font-semibold"
                                                     >$</span
                                                 >
                                             </div>
                                             <div
-                                                class="w-2/4 sm:flex text-sm text-dark3 font-work sm:space-x-8 sm:space-y-0 space-y-2 xs:mt-0 mt-5"
+                                                class="w-2/4 sm:flex text-sm text-dark3 font-inter sm:space-x-8 sm:space-y-0 space-y-2 xs:mt-0 mt-5"
                                             >
                                                 <label
                                                     class="flex items-center space-x-2"
@@ -502,19 +536,15 @@
                                         <i class="fa-solid fa-xmark"></i>
                                     </div>
                                 </li>
-                                <li
-                                    class="relative space-y-8 sm:py-16 py-12 border-b-1 border-light15"
-                                >
+                                <li class="relative space-y-8 md:py-16 py-12">
                                     <div class="space-y-3">
-                                        <h5
-                                            class="text-2xl font-shippori font-semibold"
-                                        >
+                                        <h5 class="cus-h5 text-dark1">
                                             Home & Education ofr Abused Children
                                             In colombia
                                         </h5>
 
                                         <p
-                                            class="text-second text-sm font-work space-x-5"
+                                            class="text-second text-sm font-inter space-x-5"
                                         >
                                             <span>Safe Place To Stay</span>
                                             <span>||</span>
@@ -526,19 +556,19 @@
                                         <div
                                             class="xs:flex items-center space-x-8"
                                         >
-                                            <div class="relative sm:w-4/12">
+                                            <div class="relative md:w-4/12">
                                                 <input
-                                                    class="w-full bg-light4 pl-16 py-2 text-dark3 text-xl font-bold focus:outline-none focus:border-0"
+                                                    class="w-full bg-light4 pl-16 py-2 text-dark3 text-xl font-bold rounded-sm focus:outline-none focus:border-1 border-1 border-dark10/50 hover:border-dark10 focus:border-dark10"
                                                     type="text"
                                                     value="50"
                                                 />
                                                 <span
-                                                    class="absolute top-2/4 -translate-y-2/4 left-5 text-dark3 text-lg"
+                                                    class="absolute top-2/4 -translate-y-2/4 left-5 text-dark3 text-lg text-inter font-semibold"
                                                     >$</span
                                                 >
                                             </div>
                                             <div
-                                                class="w-2/4 sm:flex text-sm text-dark3 font-work sm:space-x-8 sm:space-y-0 space-y-2 xs:mt-0 mt-5"
+                                                class="w-2/4 sm:flex text-sm text-dark3 font-inter sm:space-x-8 sm:space-y-0 space-y-2 xs:mt-0 mt-5"
                                             >
                                                 <label
                                                     class="flex items-center space-x-2"
@@ -560,31 +590,16 @@
                                     >
                                         <i class="fa-solid fa-xmark"></i>
                                     </div>
-                                </li>
-
-                                <li
-                                    class="flex items-center justify-between py-16"
-                                >
-                                    <p
-                                        class="light8 sm:text-2xl text-xl font-shippori"
-                                    >
-                                        Total
-                                    </p>
-                                    <p
-                                        class="text-dark1 font-shippori sm:text-3xl text-2xl font-bold"
-                                    >
-                                        $225.00
-                                    </p>
                                 </li>
                             </ul>
                             <div class="flex items-center justify-between">
                                 <button
-                                    class="italic sm:text-lg text-base font-medium text-sixth cursor-pointer"
+                                    class="italic sm:text-lg text-base font-medium font-inter text-sixth cursor-pointer"
                                 >
                                     Add Projects
                                 </button>
                                 <button
-                                    class="font-work italic text-sm text-light9.,"
+                                    class="font-inter italic text-base text-light17"
                                 >
                                     Clear Cart
                                 </button>
@@ -593,7 +608,7 @@
                         <!-- payment form -->
                         <div class="space-y-12">
                             <h3
-                                class="cus-bottom-bar relative after:bg-second cus-h3 text-dark0 after:translate-x-0 after:left-0"
+                                class="cus-bottom-bar relative after:bg-second cus-h3 text-dark10 after:translate-x-0 after:left-0"
                             >
                                 Payment Information
                             </h3>
@@ -608,7 +623,7 @@
                                 <div class="space-y-8">
                                     <div>
                                         <input
-                                            class="w-full bg-light4 text-lg text-dark3 p-5 focus:border-0 focus:outline-none placeholder:font-work placeholder:text-base placeholder:text-dark7"
+                                            class="w-full bg-light4 border-1 border-dark10/50 text-base text-dark3 p-5 focus:border-1 focus:border-dark10 hover:border-dark10 font-inter rounded-sm focus:outline-none placeholder:font-inter placeholder:text-base placeholder:text-dark7"
                                             type="text"
                                             placeholder="Your First Name"
                                         />
@@ -619,21 +634,21 @@
                                     >
                                         <div class="sm:col-span-3 col-span-2">
                                             <input
-                                                class="w-full bg-light4 text-lg text-dark3 p-5 focus:border-0 focus:outline-none placeholder:font-work placeholder:text-base placeholder:text-dark7"
+                                                class="w-full bg-light4 border-1 border-dark10/50 text-base text-dark3 p-5 focus:border-1 focus:border-dark10 hover:border-dark10 font-inter rounded-sm focus:outline-none placeholder:font-inter placeholder:text-base placeholder:text-dark7"
                                                 type="text"
                                                 placeholder="Card Number"
                                             />
                                         </div>
                                         <div>
                                             <input
-                                                class="w-full bg-light4 text-lg text-dark3 p-5 focus:border-0 focus:outline-none placeholder:font-work placeholder:text-base placeholder:text-dark7"
+                                                class="w-full bg-light4 border-1 border-dark10/50 text-base text-dark3 p-5 focus:border-1 focus:border-dark10 hover:border-dark10 font-inter rounded-sm focus:outline-none placeholder:font-inter placeholder:text-base placeholder:text-dark7"
                                                 type="text"
                                                 placeholder="MM/YY"
                                             />
                                         </div>
                                         <div>
                                             <input
-                                                class="w-full bg-light4 text-lg text-dark3 p-5 focus:border-0 focus:outline-none placeholder:font-work placeholder:text-base placeholder:text-dark7"
+                                                class="w-full bg-light4 border-1 border-dark10/50 text-base text-dark3 p-5 focus:border-1 focus:border-dark10 hover:border-dark10 font-inter rounded-sm focus:outline-none placeholder:font-inter placeholder:text-base placeholder:text-dark7"
                                                 type="text"
                                                 placeholder="Code"
                                             />
@@ -645,7 +660,7 @@
                                             for=""
                                         >
                                             <input type="radio" />
-                                            <span class="text-base font-work"
+                                            <span class="text-base font-inter"
                                                 >Remember this card</span
                                             >
                                         </label>
@@ -654,7 +669,7 @@
                                             for=""
                                         >
                                             <input type="radio" />
-                                            <span class="text-base font-work"
+                                            <span class="text-base font-inter"
                                                 >Email me periodic reports form
                                                 the project I supported.</span
                                             >
@@ -664,7 +679,7 @@
                                             for=""
                                         >
                                             <input type="radio" />
-                                            <span class="text-base font-work"
+                                            <span class="text-base font-inter"
                                                 >Plus, email me inspiring
                                                 stories, exclusive promotions,
                                                 and donation match opportunities
@@ -713,15 +728,15 @@
         </section>
 
         <!-- Become a volunteer section -->
-        <section class="cus-volunteer-bg lg:py-24 py-20">
+        <section class="cus-volunteer-bg lg:py-28 py-20">
             <div
-                class="lg:container lg:mx-auto lg:px-0 px-3 space-y-5 text-center"
+                class="lg:container lg:mx-auto lg:px-0 px-3 space-y-3 text-center"
             >
                 <h4 class="cus-h4 text-dark1">Join Us</h4>
-                <h3 class="cus-h3 text-dark1">
+                <h2 class="cus-h2 text-dark1 pb-3">
                     Become A Volunteer,<br />
                     Change A Life
-                </h3>
+                </h2>
                 <button class="cus-btn1 px-20 py-3 bg-dark1">Join Us</button>
             </div>
         </section>
@@ -729,20 +744,20 @@
         <!-- Footer section -->
         <footer class="bg-dark1">
             <!-- Footer top -->
-            <div class="py-12 lg:py-20">
+            <div class="py-14 lg:py-24">
                 <div
-                    class="lg:container lg:mx-auto grid gap-8 sm:gap-10 lg:grid-cols-5 sm:grid-cols-3 grid-cols-1 lg:px-0 px-3"
+                    class="lg:container lg:mx-auto grid gap-8 sm:gap-10 lg:grid-cols-5 sm:grid-cols-3 lg:px-0 px-3"
                 >
                     <!-- grid grid-cols-5 gap-x-10 -->
                     <div class="sm:col-span-2 space-y-5">
-                        <a href="#">
+                        <a href="index.html">
                             <img
                                 class="w-56 sm:w-64"
                                 src="./src/img/gfgg-foundatin-logo-footer.png"
                                 alt="Give For Goob Global Foundation Logo"
                             />
                         </a>
-                        <p class="text-light1 font-work lg:text-lg text-base">
+                        <p class="text-light1 font-inter md:text-lg text-base">
                             ‘Give For Good Global Foundation’ works worldwide to
                             fight against hunger and poverty, while giving aid
                             to child education, medical treatment, elderlies &
@@ -756,36 +771,36 @@
                         <ul class="space-y-2">
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
-                                    href="#"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
+                                    href="index.html"
                                     >Home</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
-                                    href="#"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
+                                    href="about.html"
                                     >About Us</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
-                                    href="#"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
+                                    href="donate1.html"
                                     >Donate</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
-                                    href="#"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
+                                    href="contact-us.html"
                                     >Contact Us</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
-                                    href="#"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
+                                    href="privacy-policy.html"
                                     >Privacy Policy</a
                                 >
                             </li>
@@ -796,49 +811,49 @@
                         <ul class="space-y-2">
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
                                     href="#"
                                     >End Hunger</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
                                     href="#"
                                     >Child Education</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
                                     href="#"
                                     >Help Elderly</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
                                     href="#"
                                     >Safe Place To Stay</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
                                     href="#"
                                     >Medical Treatment</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
                                     href="#"
                                     >People Empowerment</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="lg:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-work"
+                                    class="md:text-lg text-base text-light8 hover:text-light11 hover:border-b-1 border-light11 font-inter"
                                     href="#"
                                     >People Development</a
                                 >
@@ -847,18 +862,18 @@
                     </div>
                     <div class="space-y-5">
                         <h6 class="cus-h6 text-light1">Contact</h6>
-                        <p class="text-light1 lg:text-lg text-base font-work">
+                        <p class="text-light1 md:text-lg text-base font-inter">
                             16635 String Cypress <br />Road, #2317, Cypress, TX
                             77429
                         </p>
-                        <p class="text-light1 lg:text-lg text-base font-work">
+                        <p class="text-light1 md:text-lg text-base font-inter">
                             <a
                                 class="break-words"
                                 href="mailto:info@giveforgoodglobal.org"
                                 >info@giveforgoodglobal.org</a
                             >
                         </p>
-                        <p class="text-light1 lg:text-lg text-base font-work">
+                        <p class="text-light1 md:text-lg text-base font-inter">
                             <a
                                 href="tel:+18325916011"
                                 class="border-b-1 border-light1"
@@ -867,25 +882,25 @@
                         </p>
                         <div class="flex space-x-3">
                             <a
-                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 lg:text-lg text-base rounded-full hover:bg-second hover:scale-95"
+                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 md:text-lg text-base rounded-full hover:bg-second hover:scale-95"
                                 href="#"
                             >
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                             <a
-                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 lg:text-lg text-base rounded-full hover:bg-second hover:scale-95"
+                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 md:text-lg text-base rounded-full hover:bg-second hover:scale-95"
                                 href="#"
                             >
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
                             <a
-                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 lg:text-lg text-base rounded-full hover:bg-second hover:scale-95"
+                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 md:text-lg text-base rounded-full hover:bg-second hover:scale-95"
                                 href="#"
                             >
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                             <a
-                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 lg:text-lg text-base rounded-full hover:bg-second hover:scale-95"
+                                class="w-10 h-10 flex items-center justify-center bg-dark5 text-light1 md:text-lg text-base rounded-full hover:bg-second hover:scale-95"
                                 href="#"
                             >
                                 <i class="fa-brands fa-pinterest"></i>
@@ -896,13 +911,13 @@
             </div>
             <!-- Footer bottom -->
             <div class="border-t-1 border-t-light2 py-5">
-                <div class="xs:none px-4 md:container md:mx-auto space-y-2">
-                    <p class="text-center text-light1 text-base font-work">
+                <div class="px-3 lg:container lg:mx-auto lg:px-0 space-y-2">
+                    <p class="text-center text-light1 text-base font-inter">
                         Give For Good Global Foundation, Inc is an US 501(c)(3)
                         nonprofit organization, EIN 87-1627674. Donations are
                         tax-deductible.
                     </p>
-                    <p class="text-center text-light1 text-base font-work">
+                    <p class="text-center text-light1 text-base font-inter">
                         Copyright © 2022 Give For Good Global Foundation, Inc.
                         All Rights Reserved.
                     </p>
